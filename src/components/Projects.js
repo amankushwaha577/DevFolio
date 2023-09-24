@@ -2,8 +2,11 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/friend.png";
 import projImg2 from "../assets/img/spectrum.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg3 from "../assets/img/wellspring.png";
+import projImg4 from "../assets/img/movietimes.png";
+import projImg5 from "../assets/img/musicon.png";
+import projImg6 from "../assets/img/alphazone.png";
+import colorSharp2 from "../assets/img/movietimes.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -28,17 +31,17 @@ export const Projects = () => {
     {
       title: "MovieTimes",
       description: "Explore an extensive library of movies and TV shows spanning various genres,     from action-packed blockbusters to heartwarming dramas, and binge-worthy series.",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
     },
     {
       title: "MusicOn",
       description: "I've created a fantastic music experience for everyone. Think of it like a magical music world on your computer or phone. You can easily explore different parts of this world, like your favorite playlists, artists, and albums, thanks to the smooth navigation I've set up.",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
     },
     {
       title: "AlphaZone",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      description: "Dive into a vast library of academic riches. From textbooks and study notes to comprehensive PDF resources, we offer an extensive collection to cater to your educational needs.",
+      imgUrl: projImg6,
     }
   ];
 
@@ -61,7 +64,7 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1 : Mega Projects</Nav.Link>
+                      <Nav.Link eventKey="first">Mega Projects : Tab 1</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Tab 2</Nav.Link>
