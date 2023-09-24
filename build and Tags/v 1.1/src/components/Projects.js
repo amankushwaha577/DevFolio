@@ -12,6 +12,7 @@ import projImg9 from "../assets/img/youtube.png";
 
 import projImgB1 from "../assets/img/google.png";
 import projImgB2 from "../assets/img/devfolio.png";
+import projImgB3 from "../assets/img/softpedia.png";
 import colorSharp2 from "../assets/img/movietimes.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -76,6 +77,11 @@ export const Projects = () => {
       title: "Devfolio",
       description:  "It's My personal portfolio website. While you are visiting on this, it itself the same.",
       imgUrl: projImgB2,
+    },
+    {
+      title: "softpedia",
+      description:  "It's My personal portfolio website. While you are visiting on this, it itself the same.",
+      imgUrl: projImgB3,
     }
   ];
 
@@ -137,7 +143,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>I will update it letter. Too much Busy Schedule....</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
