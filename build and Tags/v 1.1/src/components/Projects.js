@@ -6,10 +6,12 @@ import projImg3 from "../assets/img/wellspring.png";
 import projImg4 from "../assets/img/movietimes.png";
 import projImg5 from "../assets/img/musicon.png";
 import projImg6 from "../assets/img/alphazone.png";
-
 import projImg7 from "../assets/img/casinopie.png";
 import projImg8 from "../assets/img/evolutionnova.png";
 import projImg9 from "../assets/img/youtube.png";
+
+import projImgB1 from "../assets/img/google.png";
+import projImgB2 from "../assets/img/devfolio.png";
 import colorSharp2 from "../assets/img/movietimes.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -64,6 +66,19 @@ export const Projects = () => {
     }
   ];
 
+  const projectsTab2 = [
+    {
+      title: "GoogleSearch Clone",
+      description:  "A Fully responsive Google clone single-page application using React.js, Tailwind CSS, and the Google Custom Search API.",
+      imgUrl: projImgB1,
+    },
+    {
+      title: "Devfolio",
+      description:  "It's My personal portfolio website. While you are visiting on this, it itself the same.",
+      imgUrl: projImgB2,
+    }
+  ];
+
   return (
     <section className="project" id="project">
       <Container>
@@ -75,7 +90,7 @@ export const Projects = () => {
                 <h2>Projects</h2>
                 <p>I have a strong skills set on both front-end and back-end technologies 
                   <br></br>
-                  Till now I have developed more than 25 MERN stack industrial level project. 
+                  Till now I have developed more than 15 MERN stack industrial level project. 
                   <br></br>
                   All These projects are available on my github profile you can check on these.
 
@@ -86,10 +101,10 @@ export const Projects = () => {
                       <Nav.Link eventKey="first">Mega Projects : Tab 1</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Mega Projects : Tab 2</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">On Progress Projects :Tab 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -108,7 +123,18 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Row>
+                        {
+                          projectsTab2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
