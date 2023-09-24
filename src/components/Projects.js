@@ -26,17 +26,17 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "MovieTimes",
+      description: "Explore an extensive library of movies and TV shows spanning various genres,     from action-packed blockbusters to heartwarming dramas, and binge-worthy series.",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "MusicOn",
+      description: "I've created a fantastic music experience for everyone. Think of it like a magical music world on your computer or phone. You can easily explore different parts of this world, like your favorite playlists, artists, and albums, thanks to the smooth navigation I've set up.",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      title: "AlphaZone",
       description: "Design & Development",
       imgUrl: projImg3,
     }
@@ -61,7 +61,7 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Project Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Tab 1 : Mega Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Tab 2</Nav.Link>
@@ -98,7 +98,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="a"></img>
     </section>
   )
 }
