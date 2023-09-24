@@ -6,13 +6,17 @@ import projImg3 from "../assets/img/wellspring.png";
 import projImg4 from "../assets/img/movietimes.png";
 import projImg5 from "../assets/img/musicon.png";
 import projImg6 from "../assets/img/alphazone.png";
+
+import projImg7 from "../assets/img/casinopie.png";
+import projImg8 from "../assets/img/evolutionnova.png";
+import projImg9 from "../assets/img/youtube.png";
 import colorSharp2 from "../assets/img/movietimes.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const projectsTab1 = [
     {
       title: "Friend's Spy",
       description:  "It's a comprehensive social network platform with a wide range of features designed to offer users an engaging and interactive experience.",
@@ -42,6 +46,21 @@ export const Projects = () => {
       title: "AlphaZone",
       description: "Dive into a vast library of academic riches. From textbooks and study notes to comprehensive PDF resources, we offer an extensive collection to cater to your educational needs.",
       imgUrl: projImg6,
+    },
+    {
+      title: "CasinoPie",
+      description:  "The game features a slot machine with three reels and four fruits, 🍒🍎🍌🍋. Fruit combinations reward the players with 🪙.",
+      imgUrl: projImg7,
+    },
+    {
+      title: "EvolutionNova",
+      description: "Created EvolutionNova, a user-friendly task management app.Showcased proficiency in full-stack development and user-centric software design.",
+      imgUrl: projImg8,
+    },
+    {
+      title: "Youtube",
+      description: "WellSpring is your essential text chat app, offering a streamlined platform for clear and efficient communication. With a user-friendly interface and lightning-fast message delivery.",
+      imgUrl: projImg9,
     }
   ];
 
@@ -77,7 +96,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          projectsTab1.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
