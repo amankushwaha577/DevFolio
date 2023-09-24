@@ -1,6 +1,7 @@
 import meter1 from "../assets/img/meter1.png";
 import meter2 from "../assets/img/meter2.png";
 import meter3 from "../assets/img/meter3.png";
+import meter4 from "../assets/img/meter4.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -59,8 +60,8 @@ export const Skills = () => {
                                 <h5>JS Libraries: PIXI.js, Vue.js, Next.js and Three.js</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={meter4} alt="Image" />
+                                <h5>Redux, Socket.io, Context API, Rapid API, Rest API, JQuery, XML, JSON, NPM and Yarn</h5>
                             </div>
                         </Carousel>
                     </div>
