@@ -8,6 +8,7 @@ import projImg5 from "../assets/img/musicon.png";
 import projImg6 from "../assets/img/alphazone.png";
 import colorSharp2 from "../assets/img/movietimes.png";
 import 'animate.css';
+import './Projects.css'
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
